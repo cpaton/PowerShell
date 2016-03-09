@@ -5,6 +5,7 @@ Set-Alias ssh-add "C:\Program Files\Git\usr\bin\ssh-add.exe"
 Set-Alias ssh-agent "C:\Program Files\Git\usr\bin\ssh-agent.exe"
 
 Import-Module posh-git
+$GitPromptSettings.EnableWindowTitle = $false
 
 function global:prompt() {
 	Write-Host "PS $($executionContext.SessionState.Path.CurrentLocation)" -NoNewLine
